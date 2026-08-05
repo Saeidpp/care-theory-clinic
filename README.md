@@ -22,3 +22,8 @@ Commit the changes and wait for GitHub Pages to redeploy.
 The included prices were adapted from the reference price list supplied by the user. Confirm every price before publishing.
 
 The booking buttons currently use email and WhatsApp. Replace these links after creating a proper booking system.
+
+
+## Version 3 updates
+- Floating WhatsApp button added to every page.
+- Header and footer logos changed to `object-fit: contain` so the top of the C is no longer cropped.
