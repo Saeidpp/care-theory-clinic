@@ -3,298 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Care Theory Clinic offers personalised aesthetic treatments with an emphasis on natural-looking results, honest advice and professional care.">
-  <meta name="theme-color" content="#b76e79">
+  <meta name="description" content="Care Theory Clinic provides personalised aesthetic treatments focused on natural-looking results, honest advice and premium care.">
   <title>Care Theory Clinic | Natural Results. Timeless Confidence.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Care Theory Clinic home">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Care Theory Clinic home">
         <img src="assets/care-theory-logo.jpeg" alt="Care Theory Clinic logo">
       </a>
 
-      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#treatments">Treatments</a>
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#consultation">Consultation</a>
-        <a href="#gallery">Results</a>
+        <a href="#treatments">Treatments</a>
+        <a href="prices.html">Price list</a>
+        <a href="#results">Results</a>
         <a href="#contact">Contact</a>
-        <a class="button button-small" href="mailto:booking@caretheoryclinic.com?subject=Consultation%20request">Book now</a>
+        <a class="btn btn-small" href="mailto:booking@caretheoryclinic.com?subject=Free%20consultation">Book consultation</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Modern aesthetic care</p>
+          <p class="kicker">Medical-led aesthetics</p>
           <h1>Natural Results.<br><em>Timeless Confidence.</em></h1>
-          <p class="hero-text">
+          <p class="hero-lead">
             Personalised aesthetic treatments designed to enhance your natural features
-            with subtle, considered results and honest professional guidance.
+            with subtle, refined results and honest professional guidance.
           </p>
-
-          <div class="hero-actions">
-            <a class="button" href="mailto:booking@caretheoryclinic.com?subject=Free%20consultation%20request">Book a consultation</a>
-            <a class="text-link" href="#treatments">Explore treatments <span aria-hidden="true">→</span></a>
-          </div>
-
-          <div class="trust-row" aria-label="Clinic values">
-            <span>Premium care</span>
-            <span>Honest advice</span>
-            <span>Natural-looking results</span>
+          <div class="actions">
+            <a class="btn" href="mailto:booking@caretheoryclinic.com?subject=Free%20consultation">Book your free consultation</a>
+            <a class="arrow-link" href="#treatments">Explore treatments →</a>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="hero-card">
-            <img src="assets/care-theory-logo.jpeg" alt="Care Theory Clinic monogram">
+        <div class="hero-image reveal">
+          <img src="assets/lilly-profile.jpeg" alt="Lilly, Medical Led Aesthetic Practitioner at Care Theory Clinic">
+          <div class="image-label">
+            <strong>Lilly</strong>
+            <span>Medical Led Aesthetic Practitioner</span>
           </div>
-          <div class="floating-note">
-            <strong>Complimentary consultation</strong>
-            <span>For new clients booking a treatment</span>
-          </div>
+        </div>
+      </div>
+
+      <div class="treatment-ticker" aria-hidden="true">
+        <div>
+          Anti-Wrinkle Injections · Dermal Fillers · Skin Boosters · Microneedling · PRP Facial · Hair Restoration · Fat Dissolving ·
+          Anti-Wrinkle Injections · Dermal Fillers · Skin Boosters · Microneedling · PRP Facial · Hair Restoration · Fat Dissolving ·
         </div>
       </div>
     </section>
 
-    <section class="intro section">
-      <div class="container narrow reveal">
-        <p class="eyebrow">Care, considered</p>
-        <h2>Refined treatments. Personalised to you.</h2>
-        <p>
-          At Care Theory Clinic, every treatment begins with a careful understanding of
-          your goals. Our approach is calm, honest and tailored—never excessive.
-        </p>
-      </div>
-    </section>
-
-    <section class="section treatments-section" id="treatments">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">Our treatments</p>
-            <h2>Enhance, restore and refresh.</h2>
-          </div>
-          <p>Explore a considered range of face, skin, body and hair treatments.</p>
-        </div>
-
-        <div class="treatment-grid">
-          <article class="treatment-card reveal">
-            <span class="number">01</span>
-            <h3>Anti-Wrinkle Injections</h3>
-            <p>Softening the appearance of expression lines while preserving natural movement.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">02</span>
-            <h3>Dermal Fillers</h3>
-            <p>Thoughtful facial enhancement and restoration, tailored to your individual features.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">03</span>
-            <h3>Skin Boosters</h3>
-            <p>Profhilo, polynucleotides and Seventy Hyal for improved hydration and skin quality.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">04</span>
-            <h3>Microneedling</h3>
-            <p>A collagen-stimulating treatment designed to improve texture, tone and radiance.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">05</span>
-            <h3>PRP & Vampire Facial</h3>
-            <p>Using platelet-rich plasma to support skin renewal and a naturally refreshed appearance.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">06</span>
-            <h3>Hair Restoration</h3>
-            <p>PRP and hair filler treatments supporting scalp health and fuller-looking hair.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">07</span>
-            <h3>Fat Dissolving</h3>
-            <p>Lemon Bottle and Aqualyx treatments for selected areas following consultation.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">08</span>
-            <h3>Filler Dissolving</h3>
-            <p>Assessment-led treatment for the correction or removal of suitable hyaluronic-acid filler.</p>
-          </article>
-
-          <article class="treatment-card reveal">
-            <span class="number">09</span>
-            <h3>Excessive Sweating</h3>
-            <p>Personalised treatment options to help manage excessive sweating.</p>
-          </article>
-        </div>
-
-        <p class="clinical-note reveal">
-          All treatments are subject to consultation and suitability assessment. Results vary between individuals.
-        </p>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
+    <section class="section about" id="about">
       <div class="container about-grid">
-        <div class="about-panel reveal">
-          <p class="eyebrow">Meet Lilly</p>
-          <h2>Medical Led Aesthetic Practitioner</h2>
-          <p class="lead">
-            A pharmacist with more than 10 years of healthcare experience.
-          </p>
-          <p>
-            Lilly brings a patient-centred and detail-focused approach to aesthetic care.
-            Every recommendation is based on your individual goals, suitability and comfort,
-            with an emphasis on balanced, natural-looking outcomes.
-          </p>
-          <p>
-            Care Theory Clinic was created around three principles: premium care, honest advice
-            and treatments that respect what makes you uniquely you.
-          </p>
+        <div class="section-title reveal">
+          <p class="kicker">About Care Theory</p>
+          <h2>A considered approach to aesthetic care.</h2>
         </div>
 
-        <aside class="values-card reveal">
-          <p class="eyebrow">Our philosophy</p>
-          <div class="value">
-            <span>01</span>
-            <div><h3>Premium</h3><p>A calm, considered experience from consultation to aftercare.</p></div>
-          </div>
-          <div class="value">
-            <span>02</span>
-            <div><h3>Honest</h3><p>Clear guidance, realistic expectations and no unnecessary treatment.</p></div>
-          </div>
-          <div class="value">
-            <span>03</span>
-            <div><h3>Natural</h3><p>Subtle enhancement designed to complement your own features.</p></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section consultation-section" id="consultation">
-      <div class="container consultation-card reveal">
-        <div>
-          <p class="eyebrow">Your first step</p>
-          <h2>Begin with a personalised consultation.</h2>
-        </div>
-        <div>
-          <p>
-            New clients are encouraged to have a consultation before treatment. The consultation
-            is complimentary when you proceed with a booked treatment.
+        <div class="about-copy reveal">
+          <p class="large-copy">
+            We focus on balanced, natural-looking outcomes that enhance rather than alter.
           </p>
-          <a class="button button-light" href="mailto:booking@caretheoryclinic.com?subject=Free%20consultation%20request">Request a consultation</a>
+          <p>
+            Care Theory Clinic is led by Lilly, a Medical Led Aesthetic Practitioner with
+            over 10 years of experience as a pharmacist. Every recommendation is personal,
+            honest and guided by your individual features, goals and suitability.
+          </p>
+          <p>
+            No pressure, no unnecessary treatment and no one-size-fits-all approach—only
+            carefully considered care designed around you.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section gallery-section" id="gallery">
+    <section class="section treatments" id="treatments">
       <div class="container">
-        <div class="section-heading reveal">
+        <div class="heading-row reveal">
           <div>
-            <p class="eyebrow">Before & after</p>
-            <h2>Real results, responsibly presented.</h2>
+            <p class="kicker">Our treatments</p>
+            <h2>Tailored to you.</h2>
           </div>
-          <p>Our treatment gallery will be added as approved client images become available.</p>
+          <a class="arrow-link" href="prices.html">View full price list →</a>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-placeholder reveal"><span>Before & after<br>coming soon</span></div>
-          <div class="gallery-placeholder reveal"><span>Before & after<br>coming soon</span></div>
-          <div class="gallery-placeholder reveal"><span>Before & after<br>coming soon</span></div>
+        <div class="treatment-list">
+          <article class="treatment reveal"><span>01</span><div><h3>Anti-Wrinkle Injections</h3><p>Soften expression lines while preserving natural movement.</p></div></article>
+          <article class="treatment reveal"><span>02</span><div><h3>Dermal Fillers</h3><p>Subtle enhancement, restoration and facial balancing.</p></div></article>
+          <article class="treatment reveal"><span>03</span><div><h3>Skin Boosters</h3><p>Profhilo, polynucleotides and Seventy Hyal for hydration and skin quality.</p></div></article>
+          <article class="treatment reveal"><span>04</span><div><h3>Microneedling</h3><p>Collagen-stimulating treatment for texture, tone and radiance.</p></div></article>
+          <article class="treatment reveal"><span>05</span><div><h3>PRP & Vampire Facial</h3><p>Platelet-rich plasma treatment supporting skin renewal.</p></div></article>
+          <article class="treatment reveal"><span>06</span><div><h3>Hair Restoration</h3><p>PRP and hair filler treatments to support scalp and hair health.</p></div></article>
+          <article class="treatment reveal"><span>07</span><div><h3>Fat Dissolving</h3><p>Lemon Bottle and Aqualyx for suitable treatment areas.</p></div></article>
+          <article class="treatment reveal"><span>08</span><div><h3>Filler Dissolving</h3><p>Assessment-led correction or removal of suitable dermal filler.</p></div></article>
+          <article class="treatment reveal"><span>09</span><div><h3>Excessive Sweating</h3><p>Personalised treatment to help manage excessive sweating.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section reviews-section">
-      <div class="container narrow reveal">
-        <p class="eyebrow">Client experience</p>
-        <h2>Care that earns confidence.</h2>
-        <blockquote>
-          “Client reviews will appear here as Care Theory Clinic begins welcoming clients.”
-        </blockquote>
-        <p class="review-note">Only genuine, permission-approved feedback will be published.</p>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s talk about your goals.</h2>
+    <section class="section profile-section">
+      <div class="container profile-grid">
+        <div class="profile-image reveal">
+          <img src="assets/lilly-profile.jpeg" alt="Lilly at Care Theory Clinic">
+        </div>
+        <div class="profile-copy reveal">
+          <p class="kicker">Meet Lilly</p>
+          <h2>Professional care, delivered personally.</h2>
+          <p class="large-copy">Medical Led Aesthetic Practitioner</p>
           <p>
-            Contact us to ask a question or request your consultation. Clinic location details
-            will be published shortly.
+            With more than a decade of pharmacy experience, Lilly brings a strong healthcare
+            background, attention to detail and a calm, client-centred approach to every consultation.
+          </p>
+          <p>
+            Her philosophy is simple: listen carefully, advise honestly and aim for results that
+            look fresh, balanced and entirely your own.
           </p>
         </div>
+      </div>
+    </section>
 
-        <div class="contact-list reveal">
-          <a href="tel:+447564355566">
-            <span>Telephone</span>
-            <strong>07564 355 566</strong>
-          </a>
-          <a href="mailto:booking@caretheoryclinic.com">
-            <span>Bookings</span>
-            <strong>booking@caretheoryclinic.com</strong>
-          </a>
-          <a href="mailto:info@caretheoryclinic.com">
-            <span>General enquiries</span>
-            <strong>info@caretheoryclinic.com</strong>
-          </a>
+    <section class="section standards">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="kicker">Why Care Theory</p>
+          <h2>The standard you deserve.</h2>
+        </div>
+
+        <div class="standards-grid">
+          <div class="standard reveal"><span>I</span><h3>Healthcare Experience</h3><p>Led by a practitioner with more than 10 years of pharmacy experience.</p></div>
+          <div class="standard reveal"><span>II</span><h3>Honest Guidance</h3><p>Clear recommendations, realistic expectations and no unnecessary treatment.</p></div>
+          <div class="standard reveal"><span>III</span><h3>Natural-Looking Results</h3><p>Every treatment is planned to complement your own features.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results" id="results">
+      <div class="container">
+        <div class="heading-row reveal">
           <div>
-            <span>Opening hours</span>
-            <strong>Monday–Saturday, 9:00–18:00</strong>
+            <p class="kicker">Real results</p>
+            <h2>Before & after.</h2>
           </div>
+          <p>Approved client results will be added as the clinic grows.</p>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-placeholder reveal"><span>Before & after<br>coming soon</span></div>
+          <div class="result-placeholder reveal"><span>Before & after<br>coming soon</span></div>
+          <div class="result-placeholder reveal"><span>Before & after<br>coming soon</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews">
+      <div class="container review-wrap reveal">
+        <p class="kicker">Client experience</p>
+        <h2>Care that earns confidence.</h2>
+        <p class="review-quote">Genuine client reviews will appear here once available.</p>
+        <p class="fine">Only authentic, permission-approved feedback will be published.</p>
+      </div>
+    </section>
+
+    <section class="section booking">
+      <div class="container booking-card reveal">
+        <div>
+          <p class="kicker">Ready to begin?</p>
+          <h2>Book your free consultation.</h2>
+          <p>New clients are encouraged to have a consultation before treatment. It is complimentary when you proceed with a treatment booking.</p>
+        </div>
+        <div class="booking-actions">
+          <a class="btn btn-light" href="mailto:booking@caretheoryclinic.com?subject=Free%20consultation">Book consultation</a>
+          <a class="btn btn-outline-light" href="https://wa.me/447564355566">WhatsApp us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="section-title reveal">
+          <p class="kicker">Contact</p>
+          <h2>Let’s talk about your goals.</h2>
+          <p>Clinic location details will be added shortly.</p>
+        </div>
+
+        <div class="contact-lines reveal">
+          <a href="tel:+447564355566"><span>Telephone</span><strong>07564 355 566</strong></a>
+          <a href="mailto:booking@caretheoryclinic.com"><span>Bookings</span><strong>booking@caretheoryclinic.com</strong></a>
+          <a href="mailto:info@caretheoryclinic.com"><span>General enquiries</span><strong>info@caretheoryclinic.com</strong></a>
+          <div><span>Opening hours</span><strong>Monday–Saturday, 9:00–18:00</strong></div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="container footer-grid">
       <div>
         <img src="assets/care-theory-logo.jpeg" alt="Care Theory Clinic">
         <p>Natural Results. Timeless Confidence.</p>
       </div>
-
-      <div>
-        <h3>Explore</h3>
-        <a href="#treatments">Treatments</a>
-        <a href="#about">About</a>
-        <a href="#consultation">Consultation</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div>
-        <h3>Information</h3>
-        <a href="privacy.html">Privacy notice</a>
-        <p>Prices and location coming soon.</p>
-      </div>
+      <div><h3>Explore</h3><a href="#about">About</a><a href="#treatments">Treatments</a><a href="prices.html">Price list</a><a href="#contact">Contact</a></div>
+      <div><h3>Information</h3><a href="privacy.html">Privacy notice</a><p>Prices and treatments are subject to consultation and suitability.</p></div>
     </div>
-
-    <div class="container footer-bottom">
-      <p>© <span id="year"></span> Care Theory Clinic. All rights reserved.</p>
-      <p>Website information does not replace an individual consultation.</p>
-    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> Care Theory Clinic.</p><p>Website information does not replace a personal consultation.</p></div>
   </footer>
 </body>
 </html>

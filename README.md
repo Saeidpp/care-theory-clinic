@@ -1,24 +1,24 @@
-# Care Theory Clinic website
+# Care Theory Clinic v2
 
-A static website designed for GitHub Pages.
+This is a static GitHub Pages website.
 
-## Upload to GitHub
+## Upload
 
-Upload these items into the root of the `care-theory-clinic` repository:
+Upload all files and the complete `assets` folder into the root of your GitHub repository.
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `privacy.html`
-- the complete `assets` folder
+Files:
+- index.html
+- prices.html
+- privacy.html
+- styles.css
+- script.js
+- assets/care-theory-logo.jpeg
+- assets/lilly-profile.jpeg
 
-Then commit the changes. GitHub Pages will republish the site automatically.
+Commit the changes and wait for GitHub Pages to redeploy.
 
-## Important items to update
+## Important
 
-1. Replace the temporary email booking links with a booking-system link when ready.
-2. Confirm the general enquiry email. This version uses `info@caretheoryclinic.com`.
-3. Add the clinic address when confirmed.
-4. Add Instagram and TikTok links when accounts are ready.
-5. Add pricing and genuine before-and-after photographs only with appropriate consent.
-6. Have the privacy notice reviewed before collecting medical information online.
+The included prices were adapted from the reference price list supplied by the user. Confirm every price before publishing.
+
+The booking buttons currently use email and WhatsApp. Replace these links after creating a proper booking system.
