@@ -185,7 +185,7 @@ footer{background:var(--black);color:#fff;padding:75px 0 25px}
 
 /* Premium redesign additions */
 .logo img{width:235px!important;height:88px!important;object-fit:contain!important;object-position:center!important;background:#fff}
-.premium-hero{position:relative;background:linear-gradient(90deg,rgba(20,16,15,.82),rgba(20,16,15,.18)),url('assets/hero-treatment.png') center 18%/cover no-repeat!important}
+.premium-hero{position:relative;background:linear-gradient(90deg,rgba(20,16,15,.82),rgba(20,16,15,.18)),url('assets/hero-treatment.png') center center/cover no-repeat!important}
 .premium-hero .hero-grid{position:relative;z-index:2;grid-template-columns:1fr;min-height:calc(100vh - 86px)}
 .premium-hero .hero-copy{max-width:770px}.premium-hero h1,.premium-hero .hero-text,.premium-hero .eyebrow,.premium-hero .text-link{color:#fff}.premium-hero h1 em{color:#dfcfc2}.premium-hero .hero-visual{display:none}.premium-hero .trust-row{border-color:rgba(255,255,255,.3);color:#fff}
 .treatment-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.treatment-cards .treatment{display:block;min-height:270px;padding:32px;background:#fff;border:1px solid var(--line);transition:.25s ease}.treatment-cards .treatment:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.treatment-cards .treatment>span{display:block;margin-bottom:45px}.treatment-cards .treatment h3{margin-bottom:12px}.treatment-cards .treatment p{margin:0}
