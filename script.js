@@ -104,3 +104,7 @@ async function loadBeforeAfterGallery() {
 }
 
 loadBeforeAfterGallery();
+
+const lightbox=document.createElement('div');lightbox.className='lightbox';lightbox.innerHTML='<button aria-label="Close image">×</button><img alt="">';document.body.appendChild(lightbox);
+function wireGallery(){document.querySelectorAll('.result-card img').forEach(img=>{img.parentElement.addEventListener('click',()=>{lightbox.querySelector('img').src=img.src;lightbox.querySelector('img').alt=img.alt;lightbox.classList.add('open')})})}
+setTimeout(wireGallery,1200);lightbox.querySelector('button').addEventListener('click',()=>lightbox.classList.remove('open'));lightbox.addEventListener('click',e=>{if(e.target===lightbox)lightbox.classList.remove('open')});
