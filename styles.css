@@ -193,3 +193,74 @@ footer{background:var(--black);color:#fff;padding:75px 0 25px}
 .treatment-page-hero{padding:140px 0 100px;background:linear-gradient(135deg,#fff,#ede0d6)}.treatment-page-hero p{max-width:720px;font-size:1.08rem}.treatment-detail-grid{display:grid;grid-template-columns:1fr .8fr;gap:80px}.detail-card{padding:40px;background:var(--ivory)}.detail-card p{padding:13px 0;margin:0;border-bottom:1px solid var(--line)}.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.faq-grid>div{padding:28px;background:#fff;border:1px solid var(--line)}.faq-section{background:var(--ivory)}
 @media(max-width:900px){.treatment-cards{grid-template-columns:repeat(2,1fr)}.treatment-detail-grid{grid-template-columns:1fr}.premium-hero{background-position:62% top}}
 @media(max-width:640px){.logo img{width:175px!important;height:70px!important}.treatment-cards{grid-template-columns:1fr}.premium-hero{min-height:720px;background-position:64% top}.premium-hero .hero-grid{min-height:720px}.faq-grid{grid-template-columns:1fr}}
+
+
+/* Google Reviews – Care Theory Clinic */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 45px;
+  text-align: left;
+}
+
+.review-card {
+  background: #fff;
+  padding: 38px;
+  border: 1px solid #e8e1dc;
+  border-radius: 3px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.035);
+}
+
+.review-stars {
+  color: #b18a55;
+  letter-spacing: 4px;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.review-quote {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #55504d;
+  margin-bottom: 25px;
+}
+
+.review-author {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #282321;
+  margin-bottom: 8px;
+}
+
+.review-source {
+  font-size: 11px;
+  color: #998b80;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.review-google-link {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.review-google-link a {
+  color: #80634e;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .review-card {
+    padding: 25px;
+  }
+}
