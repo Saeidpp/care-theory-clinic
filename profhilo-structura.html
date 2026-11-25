@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profhilo Structura in Hampton Hill | Care Theory Clinic</title>
+<meta name="description" content="Explore Profhilo Structura at Care Theory Clinic in Hampton Hill, serving Richmond, Twickenham and Kingston upon Thames. Personalised consultation.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ivory: #f8f5ef;
+  --sand: #e8ddd0;
+  --ink: #29251f;
+  --muted: #81796f;
+  --accent: #a58a70;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  width: min(1120px, 88%);
+  margin: auto;
+}
+
+header {
+  background: rgba(255,255,255,.95);
+  border-bottom: 1px solid #e9e2d9;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo img {
+  width: 125px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 12px;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.nav-cta {
+  background: var(--ink);
+  color: white;
+  padding: 11px 20px;
+}
+
+.hero {
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 65px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.kicker {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+h1, h2, h3 {
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(48px, 6vw, 76px);
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: clamp(36px, 4vw, 49px);
+  margin: 15px 0 25px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.hero-copy p {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 470px;
+}
+
+.hero-image {
+  min-height: 475px;
+  background:
+  linear-gradient(rgba(40,30,20,.04),rgba(40,30,20,.04)),
+  url('assets/profhilo-hero.png') center/cover no-repeat;
+}
+
+.button {
+  display: inline-block;
+  background: var(--ink);
+  color: white;
+  padding: 15px 27px;
+  margin-top: 22px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+.button:hover {
+  background: var(--accent);
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-light {
+  background: white;
+}
+
+.intro {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.split p, .content p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.feature-list li {
+  border-bottom: 1px solid var(--sand);
+  padding: 12px 0;
+  font-size: 13px;
+}
+
+.feature-list li:before {
+  content: "—";
+  color: var(--accent);
+  margin-right: 12px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 55px;
+}
+
+.info-card {
+  padding: 35px 27px;
+  background: var(--ivory);
+  border: 1px solid #e9e1d7;
+}
+
+.info-card span {
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.info-card p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.faq {
+  max-width: 800px;
+  margin: 45px auto 0;
+}
+
+details {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--sand);
+}
+
+summary {
+  cursor: pointer;
+  font-family: 'Italiana', serif;
+  font-size: 21px;
+}
+
+details p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.booking {
+  background: #e6d7ca;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.booking p {
+  color: #70675e;
+  max-width: 550px;
+  margin: auto;
+}
+
+footer {
+  background: var(--ink);
+  color: white;
+  padding: 45px 0;
+  text-align: center;
+  font-size: 11px;
+}
+
+footer p { color: #c7bdb1; }
+
+@media(max-width: 700px) {
+  .nav { min-height: 70px; }
+  .nav-links { gap: 12px; font-size: 10px; }
+  .nav-links .nav-cta { padding: 9px 10px; }
+  .logo img { width: 90px; }
+  .hero, .split { grid-template-columns: 1fr; gap: 35px; }
+  .hero { padding-top: 55px; }
+  .hero-image { min-height: 370px; }
+  .section { padding: 70px 0; }
+  .info-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">
+      <img src="assets/care-theory-logo.jpeg" alt="Care Theory Clinic">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#treatments">Treatments</a>
+      <a href="prices.html">Price list</a>
+      <a href="index.html#contact" class="nav-cta">Book consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="container hero">
+  <div class="hero-copy">
+    <p class="kicker">Skin quality · Hydration · Radiance</p>
+    <h1>Profhilo Treatment in Richmond<br><span>Skin, renewed.</span></h1>
+    <p>
+      A sophisticated injectable hyaluronic acid treatment
+      designed to improve skin hydration, elasticity and
+      overall skin quality, revealing a naturally refreshed
+      appearance.
+    </p>
+    <a href="index.html#contact" class="button">
+      BOOK A CONSULTATION
+    </a>
+  </div>
+  <div class="hero-image" role="img" aria-label="Profhilo skin treatment for hydrated, radiant-looking skin at Care Theory Clinic in Richmond"></div></section>
+
+
+<section class="section section-light">
+  <div class="container intro">
+    <p class="kicker">UNDERSTANDING THE TREATMENT</p>
+    <h2>What is Profhilo?</h2>
+
+    <p>
+      Profhilo is an innovative injectable treatment
+      containing a high concentration of hyaluronic acid.
+      It is designed to improve skin hydration and support
+      smoother, firmer and more radiant-looking skin.
+    </p>
+
+    <p>
+      Unlike traditional dermal fillers, Profhilo is not
+      primarily designed to add volume or change facial
+      contours. Instead, it works within the skin to
+      improve overall skin quality, hydration and
+      elasticity, helping to achieve a refreshed,
+      naturally healthy-looking appearance.
+    </p>
+
+    <p>
+      It is particularly suited to those noticing early
+      signs of skin ageing, loss of elasticity or
+      dehydration.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+ 
+    
+<div class="container split">
+
+  <div class="content">
+    <p class="kicker">THE BENEFITS</p>
+    <h2>Beautiful skin starts with quality.</h2>
+
+    <p>
+      Profhilo is designed to enhance the overall
+      quality of your skin, supporting a naturally
+      refreshed and healthy-looking complexion.
+    </p>
+
+    <ul class="feature-list">
+      <li>Intense skin hydration</li>
+      <li>Improved appearance of skin texture</li>
+      <li>Support for skin elasticity</li>
+      <li>Improved appearance of skin firmness</li>
+      <li>A smoother, more radiant-looking complexion</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <p class="kicker">YOUR SKIN, YOUR NEEDS</p>
+    <h2>A personalised approach to skin rejuvenation.</h2>
+
+    <p>
+      Every face and skin type is unique. Your
+      treatment begins with a detailed consultation
+      to understand your concerns, assess your skin
+      and establish whether Profhilo is suitable.
+    </p>
+
+    <p>
+      Your treatment plan is tailored to your
+      individual needs, with careful consideration
+      of your skin condition, expectations and
+      desired results.
+    </p>
+
+    <p>
+      Our philosophy is simple: subtle enhancement,
+      thoughtful treatment and naturally beautiful skin.
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="intro">
+      <p class="kicker">Your treatment journey</p>
+      <h2>What to expect.</h2>
+      <p>
+        From your initial consultation to your aftercare,
+        your comfort and understanding are our priority.
+      </p>
+    </div>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <span>01 · CONSULTATION</span>
+        <h3>Assessment</h3>
+        <p>
+          We discuss your skin concerns, medical history,
+          suitability and desired outcomes.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <span>02 · TREATMENT</span>
+        <h3>Precision</h3>
+        <p>
+          The treatment is administered using an appropriate
+          injection technique by your practitioner.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <span>03 · AFTERCARE</span>
+        <h3>Looking after your skin</h3>
+        <p>
+          You receive personalised aftercare guidance and
+          advice about any recommended follow-up.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container intro">
+    <p class="kicker">After your appointment</p>
+    <h2>Aftercare matters.</h2>
+    <p>
+      Small injection-site bumps, redness, tenderness,
+      swelling or bruising can occur temporarily.
+      The injection sites usually settle as the product
+      disperses, although the timing varies.
+    </p>
+    <p>
+      Follow your practitioner's individual aftercare
+      instructions. Contact the clinic if you have concerns.
+      Seek urgent medical assessment for unusual or severe
+      symptoms, particularly changes in skin colour,
+      increasing pain or visual symptoms.
+    </p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="intro">
+      <p class="kicker">Frequently asked questions</p>
+      <h2>Good to know.</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Is Profhilo a dermal filler?</summary>
+        <p>
+          No. Profhilo is an injectable hyaluronic acid
+          treatment primarily intended to improve skin
+          hydration and quality, rather than create
+          conventional filler volume or contour.
+        </p>
+      </details>
+
+      <details>
+        <summary>How many sessions will I need?</summary>
+        <p>
+          The recommended treatment course depends on
+          your skin, the product protocol and your
+          practitioner's assessment. This will be
+          discussed during your consultation.
+        </p>
+      </details>
+
+      <details>
+        <summary>When will I notice the results?</summary>
+        <p>
+          Results develop over time and vary between
+          individuals. Your practitioner can discuss
+          realistic expectations and follow-up timing.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is there any downtime?</summary>
+        <p>
+          Most people can return to normal activities
+          relatively quickly, but temporary injection-site
+          bumps, swelling, bruising and tenderness may occur.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is Profhilo suitable for everyone?</summary>
+        <p>
+          No injectable treatment is suitable for everyone.
+          A medical history and suitability assessment
+          are essential before proceeding.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container intro">
+
+    <p class="kicker">YOUR TREATMENT JOURNEY</p>
+    <h2>A considered approach to beautiful skin.</h2>
+
+    <p>
+      Every treatment plan begins with a personalised consultation.
+      For many clients, an initial course of two Profhilo sessions,
+      approximately 30 days apart, is recommended.
+    </p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; margin-top:45px; text-align:left;">
+
+      <article style="background:#fff; border:1px solid #e8e1d7; border-top:2px solid #b49a72; padding:30px 25px; box-shadow:0 8px 25px rgba(40,30,20,0.035);">
+        <span style="font-size:12px; letter-spacing:2px; color:#b49a72;">01</span>
+        <h3 style="font-size:21px; margin:18px 0 12px;">Your First Treatment</h3>
+        <p>Your first session introduces the treatment and begins the skin remodelling process.</p>
+      </article>
+
+      <article style="background:#fff; border:1px solid #e8e1d7; border-top:2px solid #b49a72; padding:30px 25px; box-shadow:0 8px 25px rgba(40,30,20,0.035);">
+        <span style="font-size:12px; letter-spacing:2px; color:#b49a72;">02</span>
+        <h3 style="font-size:21px; margin:18px 0 12px;">Your Second Session</h3>
+        <p>A follow-up treatment is generally scheduled around four weeks later to complete the initial course.</p>
+      </article>
+
+      <article style="background:#fff; border:1px solid #e8e1d7; border-top:2px solid #b49a72; padding:30px 25px; box-shadow:0 8px 25px rgba(40,30,20,0.035);">
+        <span style="font-size:12px; letter-spacing:2px; color:#b49a72;">03</span>
+        <h3 style="font-size:21px; margin:18px 0 12px;">Gradual Improvements</h3>
+        <p>Skin hydration, texture, elasticity and overall appearance may improve progressively. Results vary between individuals.</p>
+      </article>
+
+      <article style="background:#fff; border:1px solid #e8e1d7; border-top:2px solid #b49a72; padding:30px 25px; box-shadow:0 8px 25px rgba(40,30,20,0.035);">
+        <span style="font-size:12px; letter-spacing:2px; color:#b49a72;">04</span>
+        <h3 style="font-size:21px; margin:18px 0 12px;">Maintaining Your Results</h3>
+        <p>Maintenance treatments may be considered following a review of your skin and individual response.</p>
+      </article>
+
+    </div>
+
+    <p style="margin-top:30px; font-size:13px; font-style:italic;">
+      Your treatment schedule will always be tailored to your needs following a professional consultation.
+    </p>
+
+  </div>
+</section>
+
+<section class="booking">
+  <p class="kicker">Care Theory Clinic</p>
+  <h2>Your skin deserves thoughtful care.</h2>
+  <p>
+    Discover whether Profhilo is right for your skin.
+    Begin with a personalised consultation.
+  </p>
+  <a href="index.html#contact" class="button">
+    BOOK YOUR CONSULTATION
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>CARE THEORY CLINIC</p>
+  <p>Natural results. Timeless confidence.</p>
+  <p>© 2026 Care Theory Clinic. All rights reserved.</p>
+  <a href="index.html">Return to homepage</a>
+</footer>
+
+</body>
+</html>
